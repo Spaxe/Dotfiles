@@ -1,0 +1,12 @@
+# example config (see "hg help config" for more info)
+
+[ui]
+username = Xavier Ho <contact@xavierho.com>
+
+[extensions]
+# (see "hg help extensions" for more info)
+progress =
+color =
+shelve =
+fetch =
+hgext.mercurial_keyring = ~/lib/mercurial_keyring/mercurial_keyring.py
