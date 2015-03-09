@@ -1,0 +1,57 @@
+#!/usr/bin/python
+# Monitors file changes in target directory recursively.  When changes are
+# detected, runs rsync to destination directory.
+import os
+import sys
+import time
+import datetime
+import subprocess
+
+def record(directory):
+    '''Walk recursively in a directory and record file mtimes'''
+    output = {}
+    for dirpath, dirnames, filenames in os.walk(directory):
+        for filename in filenames:
+            path = os.path.join(dirpath, filename)
+            output[path] = os.path.getmtime(path)
+    return output
+
+def watch(target, dest, rsync_exclude=None):
+    print("Monitoring {0}.".format(os.path.abspath(target)))
+    state = {}
+    abs_target = os.path.abspath(target)
+    abs_dest = os.path.abspath(dest)
+    print(abs_target)
+    print(abs_dest)
+    while True:
+        this_state = record(abs_target)
+        if state != this_state:
+            sync(abs_target, abs_dest, rsync_exclude)
+            state = this_state
+        time.sleep(0.25)
+
+def sync(target, dest, rsync_exclude):
+    print("Change detected at" + str(datetime.datetime.now()))
+    if rsync_exclude:
+        subprocess.call(["rsync", "--delete", "--delete-excluded" ,"--exclude-from=" + rsync_exclude, "-vart", target, dest])
+    else:
+        subprocess.call(["rsync", "--delete", "--delete-excluded", "-vart", target, dest])
+
+def main(args):
+    def help():
+        print('autorsync: watches a directory recursively for any file changes.  '
+              'When a chane is detected, it calls rsync -vart to copy the modified '
+              'files over.\n\nUsage: autorsync [DIR_TO_WATCH] [DEPLOY_DIR]\n\n'
+              'Example: autorsync /srv/http/sulfur/')
+
+    if set(['-h', '--help']).intersection(set(sys.argv)):
+        help()
+        return
+
+    try:
+        watch(*sys.argv[1:])
+    except IndexError:
+        help()
+
+if '__main__' in __name__:
+    main(sys.argv)
