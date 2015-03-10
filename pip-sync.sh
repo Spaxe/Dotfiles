@@ -21,4 +21,4 @@ cat /tmp/pip-sync.txt | sort | uniq > ~/Dropbox/Apps/Pip/pip-sync.txt
 
 # Install missing Homebrew packages
 echo "Install missing packages ..."
-$PIP install --allow-external -r ~/Dropbox/Apps/Pip/pip-sync.txt
+$PIP install -r ~/Dropbox/Apps/Pip/pip-sync.txt
