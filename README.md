@@ -8,4 +8,4 @@ Just a bunch of user preferences I use. Feel free to browse here.
 
 `vcprompt`: https://bitbucket.org/gward/vcprompt
 
-`autorsync`, `pip-sync.sh` by me.
+`autorsync`, `pip-sync.sh` by me
