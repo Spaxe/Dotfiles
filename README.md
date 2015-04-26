@@ -8,4 +8,6 @@ Just a bunch of user preferences I use. Feel free to browse here.
 
 `vcprompt`: https://bitbucket.org/gward/vcprompt
 
-`autorsync`, `pip-sync.sh` by me
+`Preferences.sublime-settings`: My Sublime Text 3 (OSX) setting
+
+`autorsync`, `pip-sync.sh`, `git-npm-publish` by me.
