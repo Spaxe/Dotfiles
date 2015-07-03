@@ -1,14 +1,14 @@
 alias ls="ls -G"
 alias ll="ls -lah"
 alias grep="grep --color"
-alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-directories" 
+alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-directories"
 
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # Colourful prompt
 source ~/utils/colours.sh
-PS1="\n\[$BRed\]\u\[$Red\] ✖ \[$Green\]\w \[$Yellow\]\$(vcprompt) \[$Red\]》\[$Color_Off\] "
+PS1="\[\n$BRed\]\u \[$Red\]∞\[$Green\]\w \[$Yellow\]\$(vcprompt)\[$Red\]》\[$Color_Off\] "
 
 # Git auto-completion
 source ~/utils/git-completion.sh
