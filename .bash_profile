@@ -8,7 +8,7 @@ alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-director
 
 # Colourful prompt
 source ~/utils/colours.sh
-PS1="\[\n$BRed\]\u \[$Red\]∞\[$Green\]\w \[$Yellow\]\$(vcprompt)\[$Red\]》\[$Color_Off\] "
+PS1="\n\[$BRed\]\u \[$Red\]∞\[$Green\]\w \[$Yellow\]\$(vcprompt)\[$Red\]》\[$Color_Off\] "
 
 # Git auto-completion
 source ~/utils/git-completion.sh
