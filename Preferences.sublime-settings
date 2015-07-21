@@ -3,14 +3,19 @@
 	"auto_match_enabled": false,
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-	"font_size": 10.0,
+	"font_face": "Inconsolata",
+	"font_options":
+	[
+		"medium",
+	],
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Processing",
 		"SublimeLinter",
 		"Vintage",
-		"OpenGL Shading Language (GLSL)"
+		"OpenGL Shading Language (GLSL)",
+		"Processing"
 	],
 	"move_to_limit_on_up_down": false,
 	"rulers":

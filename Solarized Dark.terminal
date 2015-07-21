@@ -179,15 +179,15 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AoAAAAAAAAEBCAAoADVk1vbmFjb9ITFBUWWiRjbGFzc25hbWVYJGNsYXNzZXNW
-	TlNGb250ohUXWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RobVHJvb3SAAQgRGiMt
-	Mjc8QktSW2JpcnR2eH+Ej5ifoqu9wMUAAAAAAAABAQAAAAAAAAAcAAAAAAAAAAAAAAAA
-	AAAAxw==
+	YXNzI0AsAAAAAAAAEBCAAoADW0luY29uc29sYXRh0hMUFRZaJGNsYXNzbmFtZVgkY2xh
+	c3Nlc1ZOU0ZvbnSiFRdYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRGhtUcm9vdIAB
+	CBEaIy0yNzxCS1JbYmlydHZ4hImUnaSnsMLFygAAAAAAAAEBAAAAAAAAABwAAAAAAAAA
+	AAAAAAAAAADM
 	</data>
 	<key>FontAntialias</key>
 	<true/>
 	<key>FontWidthSpacing</key>
-	<real>1.004032258064516</real>
+	<integer>1</integer>
 	<key>Linewrap</key>
 	<true/>
 	<key>ProfileCurrentVersion</key>
@@ -215,6 +215,8 @@
 	<true/>
 	<key>ShowWindowSettingsNameInTitle</key>
 	<false/>
+	<key>StrictVTKeypad</key>
+	<true/>
 	<key>TerminalType</key>
 	<string>xterm-256color</string>
 	<key>TextBoldColor</key>
