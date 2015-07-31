@@ -1,5 +1,7 @@
-alias ls="ls -G"
-alias ll="ls -lah"
+alias ls="ls -fGH"
+alias ll="ls -aFhl"
+alias cd..="cd .."
+alias ..="cd .."
 alias grep="grep --color"
 alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-directories"
 
