@@ -15,5 +15,8 @@ PS1="\n\[$BRed\]\u \[$Red\]∞\[$Green\]\w \[$Yellow\]\$(vcprompt)\[$Red\]》\[$
 # Git auto-completion
 source ~/utils/git-completion.sh
 
+# NOT checked into Github Repo for security reasons
+source ~/.private-config
+
 # Executables paths
 export PATH=/Users/$USER/utils:/usr/local/bin:$PATH
