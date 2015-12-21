@@ -2,20 +2,19 @@
 	"auto_complete_commit_on_tab": true,
 	"auto_match_enabled": false,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
 	"font_face": "Inconsolata",
 	"font_options":
 	[
-		"medium",
+		"medium"
 	],
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Processing",
 		"SublimeLinter",
-		"Vintage",
-		"OpenGL Shading Language (GLSL)",
-		"Processing"
+		"Vintage"
 	],
 	"move_to_limit_on_up_down": false,
 	"rulers":
@@ -26,6 +25,7 @@
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
 	"tab_size": 2,
+	"theme": "Oceanic Next.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
