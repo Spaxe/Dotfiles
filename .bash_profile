@@ -22,5 +22,3 @@ source ~/.private-config
 # Executables paths
 export PATH=/Users/$USER/utils:/usr/local/bin:$PATH
 
-function _update_ps1() { export PS1="$(/Users/ho03b/utils/promptastic/promptastic.py $?)"; }
-export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
