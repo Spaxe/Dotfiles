@@ -5,6 +5,7 @@ alias ..="cd .."
 alias grep="grep --color"
 alias copy="rsync -ah --progress"
 alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-directories"
+alias date="gdate"
 
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -22,5 +23,3 @@ source ~/.private-config
 # Executables paths
 export PATH=/Users/$USER/utils:/usr/local/bin:$PATH
 
-function _update_ps1() { export PS1="$(/Users/ho03b/utils/promptastic/promptastic.py $?)"; }
-export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
