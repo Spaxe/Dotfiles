@@ -8,18 +8,14 @@ alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-director
 alias date="gdate"
 
 # Autojump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-# Colourful prompt
-# source ~/utils/colours.sh
-# PS1="\n\[$BRed\]\u \[$Red\]∞\[$Green\]\w \[$Yellow\]\$(vcprompt)\[$Red\]》\[$Color_Off\] "
+# [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # Git auto-completion
-source ~/utils/git-completion.sh
+source ~/dev/Dotfiles/git-completion.sh
 
 # NOT checked into Github Repo for security reasons
 source ~/.private-config
 
 # Executables paths
-export PATH=/Users/$USER/utils:/usr/local/bin:$PATH
+export PATH=/Users/$USER/Dotfiles:/usr/local/bin:$PATH
 
