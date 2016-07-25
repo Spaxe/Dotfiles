@@ -8,7 +8,7 @@ alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-director
 alias date="gdate"
 
 # Autojump
-# [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # Git auto-completion
 source ~/dev/Dotfiles/git-completion.sh
@@ -19,3 +19,5 @@ source ~/.private-config
 # Executables paths
 export PATH=/Users/$USER/Dotfiles:/usr/local/bin:$PATH
 
+function _update_ps1() { export PS1="$(/Users/spaxe/dev/promptastic/promptastic.py $?)"; }
+export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
