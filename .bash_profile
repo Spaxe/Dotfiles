@@ -3,12 +3,12 @@ alias ll="ls -aFhl"
 alias cd..="cd .."
 alias ..="cd .."
 alias grep="grep --color"
-alias copy="rsync -ah --progress"
+alias copy="rsync -ahirv --progress"
 alias wgetall="wget --no-verbose --no-parent --recursive --level=1 --no-directories"
 alias date="gdate"
 
 # Autojump
-# [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # Git auto-completion
 source ~/dev/Dotfiles/git-completion.sh
