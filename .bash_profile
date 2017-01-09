@@ -21,3 +21,4 @@ export PATH=/Users/$USER/Dotfiles:/usr/local/bin:$PATH
 
 function _update_ps1() { export PS1="$(/Users/$USER/dev/promptastic/promptastic.py $?)"; }
 export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+
