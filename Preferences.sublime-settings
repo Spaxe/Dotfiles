@@ -3,18 +3,15 @@
 	"auto_match_enabled": false,
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
-	"font_face": "Inconsolata",
+	"font_face": "SF Mono Regular",
 	"font_options":
 	[
 		"medium"
 	],
-	"font_size": 14,
+	"font_size": 11,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"JavaScript",
-		"Processing",
-		"SublimeLinter",
 		"Vintage"
 	],
 	"move_to_limit_on_up_down": false,
