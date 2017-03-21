@@ -10,10 +10,6 @@ alias date="gdate"
 # gpg-agent prompt
 # github massar/pinentry-mac
 export GPG_TTY=$(tty)
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-  . "${HOME}/.gpg-agent-info"
-  export GPG_AGENT_INFO
-fi
 
 # Autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
