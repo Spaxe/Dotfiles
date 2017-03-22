@@ -9,7 +9,7 @@ alias date="gdate"
 
 # gpg-agent prompt
 # github massar/pinentry-mac
-export GPG_TTY=`tty`
+export GPG_TTY=$(tty)
 
 # Autojump
 # brew install autojump
