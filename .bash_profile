@@ -1,3 +1,4 @@
+source ~/.profile
 alias ls="ls -fGH"
 alias ll="ls -aFhl"
 alias cd..="cd .."
@@ -9,7 +10,7 @@ alias date="gdate"
 
 # gpg-agent prompt
 # github massar/pinentry-mac
-export GPG_TTY=`tty`
+export GPG_TTY=$(tty)
 
 # Autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
