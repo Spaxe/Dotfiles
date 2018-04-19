@@ -29,7 +29,7 @@ source ~/dev/Dotfiles/git-completion.sh
 source ~/.private-config
 
 # Executables paths
-export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/dev/Dotfiles:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/dev/Dotfiles:/usr/local/bin:$HOME/Library/Haskell/bin:$PATH
 
 # github promptastic/promptastic
 function _update_ps1() { export PS1="$(/Users/$USER/dev/promptastic/promptastic.py $?)"; }
