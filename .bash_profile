@@ -12,6 +12,7 @@ alias lock="open -a ScreenSaverEngine"
 # gpg-agent prompt
 # github massar/pinentry-mac
 export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Autojump
 # brew install autojump

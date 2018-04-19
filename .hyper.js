@@ -29,10 +29,7 @@ module.exports = {
     borderColor: '#333',
 
     // custom css to embed in the main window
-    css: '.xterm { line-height: 2 }',
-
-    // custom css to embed in the terminal window
-    termCSS: 'x-screen { font-variant-ligatures: initial; }',
+    css: '.xterm { line-height: 2; font-variant-ligatures: initial; }',
 
     // set to `true` (without backticks) if you're using a Linux setup that doesn't show native menus
     // default: `false` on Linux, `true` on Windows (ignored on macOS)
@@ -108,6 +105,7 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hyperterm-tab-icons",
+    "hyper-ligatures",
     "hypercwd",
     "hyper-alt-click",
     "hyperterm-oceanic-next",

@@ -3,17 +3,24 @@
 	"auto_match_enabled": false,
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
-	"font_face": "SF Mono Regular",
+	"drag_text": false,
+	"font_face": "Fira Code Light",
 	"font_options":
 	[
-		"medium"
+		"subpixel_antialias"
 	],
-	"font_size": 11,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"indent_guide_options":
+	[
+		"draw_normal"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"move_to_limit_on_up_down": false,
 	"rulers":
 	[
@@ -22,6 +29,8 @@
 	],
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
+	"show_definitions": true,
+	"show_encoding": true,
 	"tab_size": 2,
 	"theme": "Broceanic.sublime-theme",
 	"translate_tabs_to_spaces": true,
