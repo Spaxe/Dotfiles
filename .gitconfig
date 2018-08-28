@@ -25,3 +25,5 @@
 [gpg]
 [merge]
 	ff = false
+[pull]
+	rebase = preserve
