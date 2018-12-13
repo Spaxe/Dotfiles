@@ -35,4 +35,3 @@ export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/dev/Dotfiles:/usr/local/bin:
 # github promptastic/promptastic
 function _update_ps1() { export PS1="$(/Users/$USER/dev/promptastic/promptastic.py $?)"; }
 export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-
