@@ -1,4 +1,6 @@
 source ~/.profile
+
+# Common shortcuts
 alias ls="ls -fGH"
 alias ll="ls -aFhl"
 alias cd..="cd .."
