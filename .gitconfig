@@ -8,7 +8,7 @@
 	d = diff
 	l = log --oneline --decorate
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	psom = push --set-upstream origin master 
+	psom = push --set-upstream origin master
 	rh = reset --hard
 	rv = remote -v
 	s = status --short --branch
@@ -16,8 +16,6 @@
 	email = contact@xavierho.com
 	name = Xavier Ho
 	signingkey = EB11C755
-[commit]
-	gpgsign = true
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
