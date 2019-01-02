@@ -25,7 +25,6 @@ fi
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Executables paths
-# export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/dev/Dotfiles:/usr/local/bin:$HOME/Library/Haskell/bin:$PATH
 export PATH=$HOME/dev/Dotfiles:/usr/local/bin:$PATH
 
 # 2019-01-02 installed github powerline/powerline
