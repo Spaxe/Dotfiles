@@ -1,4 +1,4 @@
-source ~/.profile
+# source ~/.profile
 alias ls="ls -fGH"
 alias ll="ls -aFhl"
 alias cd..="cd .."
@@ -12,26 +12,23 @@ alias lock="open -a ScreenSaverEngine"
 # gpg-agent prompt
 # github massar/pinentry-mac
 export GPG_TTY=$(tty)
-gpg-connect-agent updatestartuptty /bye >/dev/null
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+  . "${HOME}/.gpg-agent-info"
+  export GPG_AGENT_INFO
+fi
 
 # Autojump
 # brew install autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-# Bash completion:
+# Bash completion (& for git)
 # brew install bash-completion
-# brew tap homebrew/completions
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-# Git auto-completion
-source ~/dev/Dotfiles/git-completion.sh
-
-# NOT checked into Github Repo for security reasons
-source ~/.private-config
-
 # Executables paths
-export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/dev/Dotfiles:/usr/local/bin:$HOME/Library/Haskell/bin:$PATH
+# export PATH=$HOME/.local/bin:$HOME/.cabal/bin:$HOME/dev/Dotfiles:/usr/local/bin:$HOME/Library/Haskell/bin:$PATH
+export PATH=$HOME/dev/Dotfiles:/usr/local/bin:$PATH
 
-# github promptastic/promptastic
-function _update_ps1() { export PS1="$(/Users/$USER/dev/promptastic/promptastic.py $?)"; }
-export PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+# 2019-01-02 installed github powerline/powerline
+# NOTE: If updating powerline, also update .vimrc
+source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh

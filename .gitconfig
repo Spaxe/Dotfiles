@@ -15,10 +15,8 @@
 [user]
 	email = contact@xavierho.com
 	name = Xavier Ho
-	signingkey = EB11C755
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
-[gpg]

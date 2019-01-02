@@ -109,7 +109,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperterm-tab-icons",
+    // "hyperterm-tab-icons",
     "hyper-ligatures",
     "hypercwd",
     "hyper-alt-click",

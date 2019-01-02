@@ -57,3 +57,7 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+" 2019-01-02 Installing powerline/powerline from GitHub
+source /usr/local/lib/python3.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+set laststatus=2
+set showtabline=2
