@@ -4,6 +4,8 @@
 
 module.exports = {
   config: {
+    updateChannel: "canary",
+
     // default font size in pixels for all tabs
     fontSize: 12,
 
@@ -85,7 +87,7 @@ module.exports = {
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false,
 
-    modifierKeys: { altIsMeta: true }
+    modifierKeys: { altIsMeta: true },
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -95,6 +97,9 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    hypercwd: {
+      initialWorkingDirectory: '~'
+    }
   },
 
   // a list of plugins to fetch and install from npm
