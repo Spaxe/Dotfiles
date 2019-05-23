@@ -30,3 +30,13 @@ export PATH=$HOME/dev/Dotfiles:/usr/local/bin:$PATH
 # 2019-01-02 installed github powerline/powerline
 # NOTE: If updating powerline, also update .vimrc
 source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+
+# 2019-01-07 Google Cloud SDK, installed via Homebrew
+# Data61
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+
+# 2019-02-21 Java SDK, installed via homebrew 
+# brew tap AdoptOpenJDK/openjdk
+# brew cask install adoptopenjdk8
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)

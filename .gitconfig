@@ -4,7 +4,6 @@
 	bav = branch -av
 	c = commit
 	cam = commit -am
-	cleanup = "!git branch -r --merged | egrep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 	d = diff
 	l = log --oneline --decorate
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -12,6 +11,7 @@
 	rh = reset --hard
 	rv = remote -v
 	s = status --short --branch
+	cleanup-branches = "!git branch --merged | grep -v '^master\\|dev' | xargs git branch -d"
 [user]
 	email = contact@xavierho.com
 	name = Xavier Ho
@@ -23,4 +23,6 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[fetch]
+	prune = true
 [gpg]
